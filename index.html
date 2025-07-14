@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="icon" type="image/jpg" href="notepad.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="app-wrapper">
+        <div class="task-manager">
+            <h1>TO DO LIST</h1>
+            <div class="status-panel">
+                <div class="progress-info">
+                    <h3>Keep it up</h3>
+                    <div id="task-progress-bar">
+                        <div id="progress-indicator"></div>
+                    </div>
+                </div>
+                <div class="task-count">
+                    <p id="task-status">0/0</p>
+                </div>
+            </div>
+            <form class="task-input-form">
+                <label for="new-task-input" class="visually-hidden">New Task</label>
+                <input type="text" id="new-task-input" placeholder="Add new task...">
+                <button type="submit" id="submit-task-btn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            <div class="tasks-display">
+                <ul id="tasks-list"></ul>
+                <img class="empty-state-image" src="notepad.jpg" alt="notepad">
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
